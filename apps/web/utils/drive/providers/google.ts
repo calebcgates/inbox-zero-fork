@@ -226,19 +226,24 @@ export class GoogleDriveProvider implements DriveProvider {
     const files: drive_v3.Schema$File[] = [];
     let pageToken: string | undefined;
 
-    do {
-      const response = await this.client.files.list({
-        q: query,
-        fields:
-          "nextPageToken, files(id, name, mimeType, size, parents, webViewLink, createdTime, modifiedTime)",
-        pageSize: 200,
-        orderBy: "name",
-        pageToken,
-      });
+    try {
+      do {
+        const response = await this.client.files.list({
+          q: query,
+          fields:
+            "nextPageToken, files(id, name, mimeType, size, parents, webViewLink, createdTime, modifiedTime)",
+          pageSize: 200,
+          orderBy: "name",
+          pageToken,
+        });
 
-      files.push(...(response.data.files || []));
-      pageToken = response.data.nextPageToken ?? undefined;
-    } while (pageToken);
+        files.push(...(response.data.files || []));
+        pageToken = response.data.nextPageToken ?? undefined;
+      } while (pageToken);
+    } catch (error) {
+      this.logger.error("Error listing files", { error, parentId });
+      throw error;
+    }
 
     return files.map((file) => this.convertToFile(file));
   }

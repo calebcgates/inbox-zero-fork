@@ -111,3 +111,7 @@ qa/browser-flows/results/*
 
 # eval reports
 eval-results/
+
+.bc-fix-state.json
+.bc-fix-continuation.md
+bc-triage-report.md

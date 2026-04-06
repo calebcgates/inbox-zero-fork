@@ -1,0 +1,239 @@
+{
+  "version": "1.0",
+  "suppressions": [
+    {
+      "fingerprint": "6d06abcc958c951b6d0cff6c79f6b9d7",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/labels/create/route.ts",
+      "lineNumber": 15,
+      "reason": "Handler is wrapped by withEmailProvider which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "1eb8e590f03fabe215a2483f7c72f25c",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/user/drive/folders/[folderId]/route.ts",
+      "lineNumber": 20,
+      "reason": "Handler is wrapped by withEmailAccount which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "dee337c10e72f2b8aadf81ce1db242c0",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/sso/signin/route.ts",
+      "lineNumber": 20,
+      "reason": "Handler is wrapped by withError which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "95a6d46d790e70370125ba144cd629f4",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/user/drive/filings/route.ts",
+      "lineNumber": 24,
+      "reason": "Handler is wrapped by withEmailAccount which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "8ae61e82beda586dffe67d898fd89c4f",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/threads/[id]/route.ts",
+      "lineNumber": 38,
+      "reason": "Handler is wrapped by withEmailProvider which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "02a01e6d0c57fd6ecc8c13c93c494334",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/google/contacts/route.ts",
+      "lineNumber": 40,
+      "reason": "Handler is wrapped by withEmailAccount which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "2a1a50d9df1b46591a235df16fe01e5c",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/ai/analyze-sender-pattern/route.ts",
+      "lineNumber": 41,
+      "reason": "Handler is wrapped by withError which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "e2588317e4c9a2b1bcba49e5fe722e2c",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/user/stats/recipients/route.ts",
+      "lineNumber": 55,
+      "reason": "Handler is wrapped by withEmailAccount which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "2d4d314f930bc4ad99f4df331e0d0fed",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/user/stats/rule-stats/route.ts",
+      "lineNumber": 69,
+      "reason": "Handler is wrapped by withEmailAccount which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "8deb8b74e84a7b73ada4dfd324033911",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/user/stats/sender-emails/route.ts",
+      "lineNumber": 79,
+      "reason": "Handler is wrapped by withEmailAccount which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "2fb3fa9ceb0693bdec745a9e2457092a",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/user/stats/senders/route.ts",
+      "lineNumber": 86,
+      "reason": "Handler is wrapped by withEmailAccount which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "5f52ba1fd5ab905af2a79ed422be3dbe",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/clean/gmail/route.ts",
+      "lineNumber": 144,
+      "reason": "Handler is wrapped by withError which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "9ec65556ef17d868e24389cedfd4f937",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/user/stats/newsletters/route.ts",
+      "lineNumber": 272,
+      "reason": "Handler is wrapped by withEmailProvider which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "eb13f71bcb6e291a57fbc4c152e23ae1",
+      "package": "zod",
+      "postconditionId": "parse-validation-error",
+      "filePath": "apps/web/app/api/clean/route.ts",
+      "lineNumber": 299,
+      "reason": "Handler is wrapped by withError which delegates to withMiddleware. withMiddleware has an explicit catch(ZodError) block (middleware.ts:150-158) that logs and returns HTTP 400.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "bba82dc259200b39aa272641446f8da8",
+      "package": "redis",
+      "postconditionId": "missing-error-listener",
+      "filePath": "packages/api/src/main.ts",
+      "lineNumber": 133,
+      "reason": "createClient() is a local function (main.ts:270) that returns an ApiClient (HTTP REST wrapper). Not the redis npm package's createClient. No Redis connection is made here.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "1eb78e04b8ac69ecd0619f5113efddf8",
+      "package": "redis",
+      "postconditionId": "missing-error-listener",
+      "filePath": "packages/api/src/main.ts",
+      "lineNumber": 149,
+      "reason": "createClient() is a local function (main.ts:270) that returns an ApiClient (HTTP REST wrapper). Not the redis npm package's createClient. No Redis connection is made here.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "d2c6f5657a3736468239ab8552c99dfb",
+      "package": "redis",
+      "postconditionId": "missing-error-listener",
+      "filePath": "packages/api/src/main.ts",
+      "lineNumber": 166,
+      "reason": "createClient() is a local function (main.ts:270) that returns an ApiClient (HTTP REST wrapper). Not the redis npm package's createClient. No Redis connection is made here.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "ad6243a47852f89261dcf2798a1eb6b8",
+      "package": "redis",
+      "postconditionId": "missing-error-listener",
+      "filePath": "packages/api/src/main.ts",
+      "lineNumber": 187,
+      "reason": "createClient() is a local function (main.ts:270) that returns an ApiClient (HTTP REST wrapper). Not the redis npm package's createClient. No Redis connection is made here.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "6abb6aea0e70cd5ab9cf32403d2cb3ec",
+      "package": "redis",
+      "postconditionId": "missing-error-listener",
+      "filePath": "packages/api/src/main.ts",
+      "lineNumber": 210,
+      "reason": "createClient() is a local function (main.ts:270) that returns an ApiClient (HTTP REST wrapper). Not the redis npm package's createClient. No Redis connection is made here.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "518a38f47ff00c63409df8b09b7d2fb8",
+      "package": "redis",
+      "postconditionId": "missing-error-listener",
+      "filePath": "packages/api/src/main.ts",
+      "lineNumber": 227,
+      "reason": "createClient() is a local function (main.ts:270) that returns an ApiClient (HTTP REST wrapper). Not the redis npm package's createClient. No Redis connection is made here.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "1a42d3acb7237dfaa07a65c330f71a4d",
+      "package": "redis",
+      "postconditionId": "missing-error-listener",
+      "filePath": "packages/api/src/main.ts",
+      "lineNumber": 252,
+      "reason": "createClient() is a local function (main.ts:270) that returns an ApiClient (HTTP REST wrapper). Not the redis npm package's createClient. No Redis connection is made here.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "2f8a754540bd74337b4bbfef32c5bd76",
+      "package": "ai",
+      "postconditionId": "api-error-rate-limit",
+      "filePath": "apps/web/utils/llms/index.ts",
+      "lineNumber": 165,
+      "reason": "generateText() is inside generate() closure, which is always called inside a try-catch (index.ts:217-245). The catch calls handleError() which specifically handles RetryError (quota/rate-limit) and APICallError (auth, network, invalid-request).",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "42d86b54199664eeb9ee79ca0e66536e",
+      "package": "ai",
+      "postconditionId": "schema-validation-error",
+      "filePath": "apps/web/utils/llms/index.ts",
+      "lineNumber": 350,
+      "reason": "generateObject() is inside generate() closure, which is always called inside a try-catch (index.ts:383-427). The catch calls handleError() which handles all AI SDK error types including schema validation errors.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "d851e32028dea2e9ad06297c8bf13972",
+      "package": "@upstash/redis",
+      "postconditionId": "network-or-api-error",
+      "filePath": "apps/web/utils/redis/index.ts",
+      "lineNumber": 10,
+      "reason": "expire() is a thin pass-through utility. All callers are in API route handlers wrapped by withMiddleware which has a generic catch-all for unhandled errors, ensuring network errors never crash the process.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "2546651700a6cc1a4bf0e50da83f8fad",
+      "package": "@supabase/supabase-js",
+      "postconditionId": "rls-policy-violation",
+      "filePath": "packages/api/src/main.ts",
+      "lineNumber": 211,
+      "reason": "client.delete() is called on an ApiClient instance (HTTP REST wrapper), not a Supabase client. The variable is created by local createClient() (main.ts:270) returning new ApiClient(config). No Supabase is used in this file.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "fingerprint": "777e6ae344fce65654ec73788d4c47b6",
+      "package": "winston",
+      "postconditionId": "missing-error-listener",
+      "filePath": "apps/web/scripts/setup-telegram-bot.ts",
+      "lineNumber": 20,
+      "reason": "createLogger() is a local async function (lines 86-102) wrapping @/utils/logger. Winston is not imported or used in this file. The corpus matched the function name only.",
+      "suppressedAt": "2026-04-04T00:00:00Z"
+    }
+  ]
+}
